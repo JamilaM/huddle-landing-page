@@ -1,21 +1,28 @@
 *{
     box-sizing: border-box;
 }
+
+
 body{
     
-   
-    margin-top: 0;
+    margin: 0;
 }
+
+
 body, button {
     
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    
 }
+
 
 h1, h3 {
     
     font-family: 'Poppins', sans-serif;
 }
+
+
 
 nav{
     display: flex;
@@ -23,21 +30,38 @@ nav{
     padding: 20px;
 }
 
+
+
 .logo{
     
     width: 200px;
 }
 
+
+
 .nav-button{
     
     background-color: white;
-    font-size: 16px;
     border: 0px;
     font-weight: 700;
     border-radius: 30px;
     padding: 5px 30px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 }
+
+
+.nav-button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+.nav-button:hover, .nav-button a:hover{
+   background-color: hsl(322, 100%, 66%);
+   color: white;
+    
+}
+
 
 header{
     
@@ -46,8 +70,8 @@ header{
     background-size: cover;
     background-position: center;
     position: relative;
+    padding-bottom: 50px;
 }
-
 
     
 
@@ -60,15 +84,21 @@ header{
     
 }
 
+
 .hero-img img{
     
     width: 100%;
     
 }
+
+
 .cards{
+    
    margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
+
+
 
 .grow-together, .your-users{
     
@@ -78,11 +108,13 @@ header{
     grid-template-columns: 40% 30%;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    margin: 1rem auto;
+    box-shadow: 0 4px 8px 0 hsl(208, 11%, 55%);
+    margin: 1.5rem auto;
     padding: 20px;
     border-radius: 20px;
 }
+
+
 
 .flowing-conversation{
     width: 80%;
@@ -91,34 +123,186 @@ header{
     grid-template-columns: 30% 40%;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px 0 hsl(208, 11%, 55%);
     margin: auto;
     padding: 20px;
     border-radius: 20px;
     
 }
 
-.grow-together-img img {
+
+ .grow-together-img img {
     
     width: 100%;
 }
+
 
 .flowing-conversation-img img{
     
     width: 100%;
 }
 
-.your-users-img img {
+
+.your-users-img img{
     
     width: 100%;
 }
 
 
-
-
+.pink-button{
     
+    background-color: hsl(322, 100%, 66%);
+    padding: 10px 40px;
+    border-radius: 30px;
+    margin-top: 15px;
+    border: 0;
+    box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.3), 0px 1px 2px 0 rgba(0,0,0,0.3); 
+    
+}
+
+.pink-button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+}
+
+.pink-button:hover, .pink-button a:hover{
+   background-color: white;
+   color: hsl(322, 100%, 66%);
+    
+}
 
 
+.footer-card{
+    
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 hsl(208, 11%, 55%);
+    position: relative;
+    top: 80px;
+    background-color: white;   
+     
+}
+
+
+
+.footer-card button{
+    
+    margin: 0;
+}
+
+
+
+.footer-section{
+    
+    background-color: hsl(192, 100%, 9%);
+    padding: 150px 50px 0px 50px;
+    
+}
+
+
+.footer{  
+
+    color: white;
+    display: grid;
+    grid-template-columns: 40% 10% 10% 20%;
+    justify-content: space-around;
+    align-items: center;
+      
+}
+
+
+
+.footer .logo{
+    
+  filter:brightness(100);
+}
+
+
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.footer .icons i{
+    
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+
+.copyright{
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .grow-together, .your-users, .flowing-conversation, .hero, .footer {
+        
+        grid-template-columns: 80%;
+        
+        height: auto;
+    } 
+    
+    .grow-together, .your-users, .flowing-conversation, .hero{
+        
+        text-align: center;
+    }
+    
+    .footer-card{
+        
+        width: 80%;
+    }
+    
+    .grow-together-text, .your-users-text {
+        
+       order: 1
+    }
+    
+    .logo{
+        
+        width: 120px;
+    }
+    
+    .pink-button{
+        
+        
+      padding:10px 20px;
+    }
+    
+    .nav-button a{
+        font-size: 14px;
+    }
+    
+    .hero-img { 
+    margin-top: 50px;
+    }
+        
+    .copyright{
+        
+        text-align: center;
+    }  
+    
+    body{
+        
+        font-size: 15px;
+    }
+}
 
 
 /* ### Primary
